@@ -49,3 +49,8 @@ This tool also suppors Unix wildcards and user environmental variables such as "
 ```
 ./MainProgram.py ~/takeout-20170310T190539Z-00*
 ```
+![Timeline](https://cloud.githubusercontent.com/assets/17178504/24331666/6f04315e-1239-11e7-92ef-6f61c1b61ee5.png)
+
+![Map](https://cloud.githubusercontent.com/assets/17178504/24331665/6f01e6b0-1239-11e7-8a3c-950e69baecfc.png)
+
+
