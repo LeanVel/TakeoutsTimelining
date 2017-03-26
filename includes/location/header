@@ -1,0 +1,6 @@
+<html>
+  <head><title>OpenLayers Marker Popups</title>
+  <style>body, html { height:100%; padding:0; margin:0;}</style>
+  </head>
+  <body>
+  <div style="float:left; width:20%; height:100%; background: #eeeeee; overflow-y: scroll;">

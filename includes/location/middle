@@ -1,0 +1,19 @@
+</div>
+  <div id="mapdiv" style="overflow:hidden; width:80%; height:100%;"></div>
+  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+  <script>
+    map = new OpenLayers.Map("mapdiv");
+    map.addLayer(new OpenLayers.Layer.OSM());
+
+    epsg4326 =  new OpenLayers.Projection("EPSG:4326"); //WGS 1984 projection
+    projectTo = map.getProjectionObject(); //The map projection (Spherical Mercator)
+
+    var lonLat = new OpenLayers.LonLat( 8.683333, 50.116667 ).transform(epsg4326, projectTo);
+
+
+    var zoom=5;
+    map.setCenter (lonLat, zoom);
+
+    var vectorLayer = new OpenLayers.Layer.Vector("Overlay");
+
+    // Define markers as "features" of the vector layer:
