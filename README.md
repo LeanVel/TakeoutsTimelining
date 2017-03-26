@@ -1,7 +1,7 @@
 # TakeoutsTimelining
 The idea of this project is to permom a forensics analysis on the available data on Google Takeout by doing timelining. This tool was written in python and at the moment it has some \*nix dependencies on the hashing and the decompressing functions.
 
-## Installation Requirments
+## Dependencies Installation
 ```
 sudo apt install python3-pip
 
