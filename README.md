@@ -2,13 +2,15 @@
 The idea of this project is to permom a forensics analysis on the available data on Google Takeout by doing timelining. This tool was written in python and at the moment it has some \*nix dependencies on the hashing and the decompressing functions.
 
 ## Installation Requirments
+```
 sudo apt install python3-pip
 
 pip3 install icalendar
-Edit
+
+```
 
 ## Usage
-'''
+```
   ./MainProgram.py -h
     
     Usage: MainProgram.py [options] <TakeOut File(s)>
@@ -33,13 +35,17 @@ Edit
       -e ENDTIMEFRAME, --end-time-frame=ENDTIMEFRAME
                             specify the end of the desired time frame in 
                             the format YYYY-MM-DD hh:mm
-'''                            
+```                         
                             
 ## Examples 
 In this repository you can find a Google Takeout exaple so you can test this tool.
 
-'''./MainProgram.py takeout-20170310T190539Z-001.zip'''
+```
+./MainProgram.py takeout-20170310T190539Z-001.zip 
+```
 
 This tool also suppors Unix wildcards and user environmental variables such as "~"
 
-'''./MainProgram.py ~/takeout-20170310T190539Z-00*'''
+```
+./MainProgram.py ~/takeout-20170310T190539Z-00*
+```
