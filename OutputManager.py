@@ -161,9 +161,9 @@ def generateHTML():
             tmp_data = tmp_data[2:].replace(" ", ", ")
             #print(tmp_data)
 
-            output += "<tr><td>" + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(data[0])) + "</td><td>" + str(data[1]) + "</td><td>" + str(data[2]) + " <a href=\"#\" onclick=\"openOverlay( " + tmp_data + " )\">Show</a></td></tr> \n"
+            output += "<tr><td>" + time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(data[0])) + "</td><td>" + str(data[1]) + "</td><td>" + str(data[2]) + " <a href=\"#\" onclick=\"openOverlay( " + tmp_data + " )\">Show</a></td></tr> \n"
         else:
-            output += "<tr><td>" + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(data[0])) + "</td><td>" + str(data[1]) + "</td><td>" + str(data[2]) + "</td></tr> \n"
+            output += "<tr><td>" + time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(data[0])) + "</td><td>" + str(data[1]) + "</td><td>" + str(data[2]) + "</td></tr> \n"
 
     output += """
     </tbody>
