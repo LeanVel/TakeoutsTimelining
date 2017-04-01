@@ -2,7 +2,7 @@
 The idea of this project is to perform a forensics analysis on the available data on Google Takeout by doing timelining. This tool can process the .zip files from the Google Takeout service and create a basic timeline. Please keep in mind that all timestamps in the timeline are shown as UTC time. This tool was written in python and at the moment it has some \*nix dependencies on the hashing and the decompressing functions.
 
 ## Warning
-Please keep in mind that this tool was created in a few afternoons as a students project. It is made as a proof of concept. If you ever use this tool for any investigation you have the obligation to check all the results. 
+Please keep in mind that this tool was created in a few afternoons as a students project. It was implemented as a proof of concept. Before the usage of this tool in a real forensics investigation, further testing and analysis should be done by professionals with experience in the field.
 
 ## Dependencies Installation
 ```
